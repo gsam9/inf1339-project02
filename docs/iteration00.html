@@ -1,23 +1,23 @@
 <html>
 <head>
-  <style>
-    .test_class{
-      color: red;
-      font-family: Sans-Serif;
-    }
-  </style>
+    <style>
+        .test_class{
+            color: orangered;
+            font-family: sans-serif;
+        }
+    </style>
 </head>
 <body>
 
 <h3>Version 00</h3>
 
-<button onclick="functionHello()">Click me</button>
+<button onclick="hFunction()">Click me</button>
 
-<p class="test_class"></p>
+<p id="test" class="test_class"></p>
 
 <script>
-function functionHello() {
-  document.getElementByClassName("test_class").innerHTML = "HELLO!";
+function hFunction() {
+  document.getElementById("test").innerHTML = "HELLO!";
 }
 </script>
 
